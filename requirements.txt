@@ -9,3 +9,4 @@
 # moving to streamlit from SiS
 snowflake-snowpark-python
 streamlit
+requests
