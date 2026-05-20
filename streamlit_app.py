@@ -50,7 +50,7 @@ if ingredients_list:
         if search_on != None: 
           smoothiefruit_response = requests.get(f"https://my.smoothiefroot.com/api/fruit/{search_on}")
         else:
-          smoothie_fruit_response = requests.get(f"https://my.smoothiefroot.com/api/fruit/{ingredient}")
+          smoothiefruit_response = requests.get(f"https://my.smoothiefroot.com/api/fruit/{ingredient}")
         sf_df = st.dataframe(data = smoothiefruit_response.json(), use_container_width = True)
 
     my_insert_stmt = """ insert into smoothies.public.orders(ingredients, name_on_order)
