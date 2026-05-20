@@ -47,7 +47,7 @@ if ingredients_list:
       
         st.subheader(ingredient + ' Nutrition Information')
         st.subheader(search_on)
-        if search_on: 
+        if search_on != None: 
           smoothiefruit_response = requests.get(f"https://my.smoothiefroot.com/api/fruit/{search_on}")
         else:
           smoothie_fruit_response = requests.get(f"https://my.smoothiefroot.com/api/fruit/{ingredient}")
